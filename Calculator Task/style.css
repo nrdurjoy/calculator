@@ -44,6 +44,10 @@ input::placeholder{
     font-size: 20px;
     background-color: #171719;
     color: #eaeaea;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #444446;
 }
 .row{
     display: flex;
@@ -51,6 +55,9 @@ input::placeholder{
 }
 .equal{
     background-color: #318607;
+}
+.equal:hover{
+    background-color: #63be35;
 }
 .green-txt{
     background-color: #2d2d2f;
