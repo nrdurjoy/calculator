@@ -19,34 +19,36 @@
             <input type="text" id="display" readonly >
         </div>
         <div class="row row-2">
-            <button class="btn clear">C</button>
-            <button class="btn green-txt"><=</button>
-            <button class="btn green-txt">%</button>
-            <button class="btn green-txt">&#247;</button>
+            <button class="btn clear" onclick="clearInput()">C</button>
+            <button class="btn green-txt" onclick="deleteOne()">&#9003;</button>
+            <button class="btn green-txt"
+            onclick="calculate('%')">%</button>
+            <button class="btn green-txt"
+            onclick="calculate('&#247;')">&#247;</button>
         </div>
         <div class="row row-3">
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn green-txt">&#215;</button>
+            <button class="btn" onclick="calculate(7)">7</button>
+            <button class="btn" onclick="calculate(8)">8</button>
+            <button class="btn" onclick="calculate(9)">9</button>
+            <button class="btn green-txt" onclick="calculate('*')">&#215;</button>
         </div>
         <div class="row row-4">
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn green-txt">&#8722;</button>
+            <button class="btn" onclick="calculate(4)">4</button>
+            <button class="btn" onclick="calculate(5)">5</button>
+            <button class="btn" onclick="calculate(6)">6</button>
+            <button class="btn green-txt" onclick="calculate('-')">&#8722;</button>
         </div>
         <div class="row row-5">
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn green-txt">&#43;</button>
+            <button class="btn" onclick="calculate(1)">1</button>
+            <button class="btn" onclick="calculate(2)">2</button>
+            <button class="btn" onclick="calculate(3)">3</button>
+            <button class="btn green-txt" onclick="calculate('+')">&#43;</button>
         </div>
         <div class="row row-6">
-            <button class="btn">+/-</button>
-            <button class="btn">0</button>
-            <button class="btn">.</button>
-            <button class="btn equal">=</button>
+            <button class="btn" onclick="display.value = eval(display.value)">Ans</button>
+            <button class="btn" onclick="calculate(0)">0</button>
+            <button class="btn" onclick="calculate('.')">.</button>
+            <button class="btn equal" onclick="display.value = eval(display.value)">=</button>
         </div>
         </div>
     </section>
